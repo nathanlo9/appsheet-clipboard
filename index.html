@@ -6,13 +6,30 @@
 <body>
     <script>
         function copyToClipboard(text) {
-            var dummy = document.createElement("textarea");
-            document.body.appendChild(dummy);
-            dummy.value = text;
-            dummy.select();
-            document.execCommand("copy");
-            document.body.removeChild(dummy);
-            alert("Copied to clipboard: " + text);
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(function() {
+                    alert("Copied to clipboard: " + text);
+                }).catch(function(err) {
+                    console.error("Failed to copy: ", err);
+                });
+            } else {
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = text;
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Copied to clipboard: " + text);
+            }
+        }
+
+        // Get the text parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const textToCopy = urlParams.get('text');
+
+        // Copy the text to clipboard
+        if (textToCopy) {
+            copyToClipboard(textToCopy);
         }
     </script>
 </body>
