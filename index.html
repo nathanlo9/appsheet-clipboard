@@ -8,9 +8,9 @@
         function copyToClipboard(text) {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(text).then(function() {
-                    alert("Copied to clipboard");
+                    alert("Copied to clipboard: " + text);
                     window.close();
-                }).catch(function(err) {
+                    }).catch(function(err) {
                     console.error("Failed to copy: ", err);
                 });
             } else {
@@ -20,7 +20,7 @@
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);
-                alert("Copied to clipboard");
+                alert("Copied to clipboard: " + text);
                 window.close();
             }
         }
