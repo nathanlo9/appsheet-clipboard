@@ -4,7 +4,7 @@ metadata:
   name: appsheet-clipboard
   description: Allows an AppSheet to write to the browser clipboard 
   annotations:
-    github.com/project-slug: lds-ics/appsheet-clipboard
+    github.com/project-slug: nathanlo9/appsheet-clipboard
     backstage.io/techdocs-ref: dir:. 
 spec:
   type: website
