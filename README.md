@@ -1,5 +1,3 @@
-It seems there was an issue with generating the README.md file. Let me create the content for you directly here:
-
 ```markdown
 # Clipboard Script for Google AppSheet
 
