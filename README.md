@@ -1,7 +1,8 @@
 ```markdown
 # Clipboard Script for Google AppSheet
 
-This project provides a simple HTML and JavaScript snippet that enables a Google AppSheet app to write to the clipboard. The script reads a 'text' parameter from the URL and copies it to the clipboard, supporting both modern and fallback methods.
+This project provides a simple HTML and JavaScript snippet that enables a Google AppSheet app to write to the clipboard.
+The script reads a 'text' parameter from the URL and copies it to the clipboard, supporting both modern and fallback methods.
 
 ## Features
 
