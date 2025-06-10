@@ -7,8 +7,8 @@ metadata:
     github.com/project-slug: nathanlo9/appsheet-clipboard
     backstage.io/techdocs-ref: dir:. 
     backstage.io/adr-location: docs/adrs
-  type: website
-  lifecycle: production
-  owner: lockard-team
-  system: appsheet-clipboard
-
+  spec:
+    type: website
+    lifecycle: production
+    owner: lockard-team
+    system: appsheet-clipboard
