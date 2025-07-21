@@ -10,5 +10,5 @@ metadata:
   spec:
     type: website
     lifecycle: production
-    owner: lockard-team
+    owner: enterprise-architecture
     system: appsheet-clipboard
